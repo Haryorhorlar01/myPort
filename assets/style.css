@@ -563,3 +563,117 @@ section.about h2::after {
     text-align: left;
     flex-direction: column;
 }
+
+
+
+/* SKILLS */
+.professional_skills {
+    margin: var(--mb-2) 0;
+}
+
+.skills {
+    margin-top: var(--mt-2);
+    background:linear-gradient( #dfdf 0%, #FCFFFC 10%, #ddd);
+    border-radius: 1rem;
+
+    /* set pd */
+    padding: 1.6rem 1rem 1.8rem;
+    border: 2px solid #aaa;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    box-shadow:  .4rem .6rem 1rem #dcdc;
+}
+
+.skills::before {
+    content: "";
+    position: absolute;
+    background-color: var(--body-color);
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+}
+
+.skills h4, .value {
+    z-index: 10;
+    font-weight: bold;
+    color: var(--heading-color);
+}
+
+.skills h4 {
+    margin-left: 10px;
+}
+
+.skills .value {
+    margin-right: 10px;
+}
+.skills .percent {
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.384);
+    /* width: calc(100% - 150px); */
+    width: 100%;
+    height: 1.3rem;
+    border-radius: 10px;
+    margin: 0 10px;
+    margin-top: .4rem;
+    box-shadow: inset 0 0 10px var(--heading-color);
+    overflow: hidden;
+}
+
+.skills .percent .progress {
+    position: absolute;
+    background-color: rgb(58, 57, 57);
+    width: 80%;
+    height: 100%;
+    box-shadow: inset 0 0 5px #000;
+    animation: animate 1s ease-in-out forwards;
+}
+
+@keyframes animate {
+    from {
+        width: 0;
+    }
+}
+
+/* progress bar */
+.skills .percent .html {
+    width: 95%;
+}
+
+.skills .percent .css {
+    width: 85%;
+}
+
+.skills .percent .sass {
+    width: 75%;
+}
+
+.skills .percent .js {
+    width: 70%;
+}
+
+.skills .percent .react {
+    width: 60%;
+}
+
+
+.skills .percent .figma {
+    width: 90%;
+}
+
+.skills .percent .xd {
+    width: 70%;
+}
+
+.skills .percent .ps {
+    width: 92%;
+}
+
+.skills .percent .ai {
+    width: 75%;
+}
+
+.skills .percent .corel {
+    width: 87%;
+}
